@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Roboto+Condensed:wght@700&display=swap');
 
 /**
- * @author Prenom Nom <courriel>
+ * @author Chalarak <courriel>
  *
  * TABLE DES MATIERES
  * Normalize
@@ -44,6 +44,9 @@
   img{
      max-width: 100%;
    }
+  figure{ /* ajout pour éliminer la marge de 40px définie par le navigateur */
+      margin:0;
+  }
 /* Charte typographique
    ========================================================================== */
    html{
@@ -51,7 +54,8 @@
   }
   .nav_liste {
      font-family: 'News Cycle';
-     font-size: 300;
+     /*font-size: 300;*/
+      font-weight: 300;
   }
   
   body {
@@ -110,6 +114,7 @@
   
   h2 { /* = 24px */
       font-size: 2.4rem;
+      line-height: 1;
   }
   @media (min-width: 600px) {
       h2 { /* = 32px */
@@ -213,7 +218,8 @@
   }         
 /* premier enfant du ul sans backgroound-color */
   .nav--header .nav__item:first-child{
-    background-color: none;
+    /*background-color: none;*/
+      background-color: transparent;
   }
 
   .nav_item{

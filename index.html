@@ -16,11 +16,11 @@
             <nav class="nav nav--header" role="navigation">
                 <a class="logo>" href="index.html">
                         <img src="images/logo-final.png" alt="logo">
-                    </figure>
+<!--                    </figure>-->
                 </a>
                 <ul class="nav__list">
 
-                    </li>
+<!--                    </li>-->
                     <li class="nav__item">
                         <a class="nav__link nav__link--active" href="#">Artistes</a>
                     </li>
@@ -129,9 +129,12 @@
                     <p class="paragraphe">Inscrivez votre adresse courriel</p>
                     <form class="infolettre__form" method="post" action="traitement.php" id="abonnement"
                         name="abonnement">
+<!-- un formulaire avec une action="traitement.php" ? -->
                         <input class="infolettre__courriel" type="email" id="courriel" value="Inscrivez votre courriel"
                             onfocus="javascript:this.value=''">
-                        <!-- Le 'onFocus' efface le texte lorsque l'utilisateur clique sur le champ -->
+                        <!-- L'attribut 'onFocus' est une technique intrusive -->
+                        <!-- Cela va à l'encontre du principe de séparer les enjeux -->
+                        <!-- On dirait du code copier de nowhere sur les internets -->
                         <input class="infolettre__bouton" type="submit" value="M'abonner">
                     </form>
                 </aside>
